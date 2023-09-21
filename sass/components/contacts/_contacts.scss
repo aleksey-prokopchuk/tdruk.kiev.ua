@@ -96,6 +96,16 @@
     grid-area: contacts__item-location;
   }
 
+  &__item-location,
+  &__item-fone,
+  &__item-email {
+    display: flex;
+    flex-direction: column;
+    @include mq(tablet) {
+      align-items: flex-start;
+    }
+  }
+
   &__item:not(:last-child) {
     margin-bottom: 25px;
 
@@ -115,6 +125,10 @@
     margin-left: auto;
     margin-right: auto;
 
+    @include mq(tablet) {
+      text-align: left;
+      margin: 0;
+    }
     @include mq(desktop) {
       justify-content: left;
     }
@@ -169,4 +183,12 @@
 
 .contacts .title {
   margin-bottom: 15px;
+  @include mq(desktop) {
+    text-align: left;
+  }
+}
+
+.gmap {
+  width: 100%;
+  height: 100%;
 }
