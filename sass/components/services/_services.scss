@@ -5,38 +5,38 @@
 
   background-repeat: no-repeat;
   background-position: top;
-  background-image: url(../../../images/services/bg-services.png);
-  background-image: -webkit-image-set(url(../../../images/services/bg-services.webp) 1x);
+  background-image: url(../images/services/bg-services.png);
+  background-image: -webkit-image-set(url(../images/services/bg-services.webp) 1x);
   @include mq(retina) {
-    background-image: url(../../../images/services/bg-services@2x.png);
-    background-image: -webkit-image-set(url(../../../images/services/bg-services@2x.webp) 2x);
+    background-image: url(../images/services/bg-services@2x.png);
+    background-image: -webkit-image-set(url(../images/services/bg-services@2x.webp) 2x);
   }
   @include mq(mobile) {
     padding-bottom: 58px;
-    background-image: url(../../../images/services/bg-services_sm.png);
-    background-image: -webkit-image-set(url(../../../images/services/bg-services_sm.webp) 1x);
+    background-image: url(../images/services/bg-services_sm.png);
+    background-image: -webkit-image-set(url(../images/services/bg-services_sm.webp) 1x);
     @include mq(retina) {
-      background-image: url(../../../images/services/bg-services_sm@2x.png);
-      background-image: -webkit-image-set(url(../../../images/services/bg-services_sm@2x.webp) 2x);
+      background-image: url(../images/services/bg-services_sm@2x.png);
+      background-image: -webkit-image-set(url(../images/services/bg-services_sm@2x.webp) 2x);
     }
   }
   @include mq(tablet) {
     padding: 60px 0;
 
-    background-image: url(../../../images/services/bg-services_md.png);
-    background-image: -webkit-image-set(url(../../../images/services/bg-services_md.webp) 1x);
+    background-image: url(../images/services/bg-services_md.png);
+    background-image: -webkit-image-set(url(../images/services/bg-services_md.webp) 1x);
     @include mq(retina) {
-      background-image: url(../../../images/services/bg-services_md@2x.png);
-      background-image: -webkit-image-set(url(../../../images/services/bg-services_md@2x.webp) 2x);
+      background-image: url(../images/services/bg-services_md@2x.png);
+      background-image: -webkit-image-set(url(../images/services/bg-services_md@2x.webp) 2x);
     }
   }
   @include mq(desktop) {
     padding: 80px 0;
-    background-image: url(../../../images/services/bg-services_lg.png);
-    background-image: -webkit-image-set(url(../../../images/services/bg-services_lg.webp) 1x);
+    background-image: url(../images/services/bg-services_lg.png);
+    background-image: -webkit-image-set(url(../images/services/bg-services_lg.webp) 1x);
     @include mq(retina) {
-      background-image: url(../../../images/services/bg-services_lg@2x.png);
-      background-image: -webkit-image-set(url(../../../images/services/bg-services_lg@2x.webp) 2x);
+      background-image: url(../images/services/bg-services_lg@2x.png);
+      background-image: -webkit-image-set(url(../images/services/bg-services_lg@2x.webp) 2x);
     }
   }
   &__title {

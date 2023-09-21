@@ -6,38 +6,38 @@
   background-repeat: no-repeat;
   background-position: top;
 
-  background-image: url(../../../images/contacts/bg-contacts.png);
-  background-image: -webkit-image-set(url(../../../images/contacts/bg-contacts.webp) 1x);
+  background-image: url(../images/contacts/bg-contacts.png);
+  background-image: -webkit-image-set(url(../images/contacts/bg-contacts.webp) 1x);
   @include mq(retina) {
-    background-image: url(../../../images/contacts/bg-contacts@2x.png);
-    background-image: -webkit-image-set(url(../../../images/contacts/bg-contacts@2x.webp) 2x);
+    background-image: url(../images/contacts/bg-contacts@2x.png);
+    background-image: -webkit-image-set(url(../images/contacts/bg-contacts@2x.webp) 2x);
   }
   @include mq(mobile) {
-    background-image: url(../../../images/contacts/bg-contacts_sm.png);
-    background-image: -webkit-image-set(url(../../../images/contacts/bg-contacts_sm.webp) 1x);
+    background-image: url(../images/contacts/bg-contacts_sm.png);
+    background-image: -webkit-image-set(url(../images/contacts/bg-contacts_sm.webp) 1x);
     @include mq(retina) {
-      background-image: url(../../../images/contacts/bg-contacts_sm@2x.png);
-      background-image: -webkit-image-set(url(../../../images/contacts/bg-contacts_sm@2x.webp) 2x);
+      background-image: url(../images/contacts/bg-contacts_sm@2x.png);
+      background-image: -webkit-image-set(url(../images/contacts/bg-contacts_sm@2x.webp) 2x);
     }
   }
   @include mq(tablet) {
     padding: 60px 0;
 
-    background-image: url(../../../images/contacts/bg-contacts_md.png);
-    background-image: -webkit-image-set(url(../../../images/contacts/bg-contacts_md.webp) 1x);
+    background-image: url(../images/contacts/bg-contacts_md.png);
+    background-image: -webkit-image-set(url(../images/contacts/bg-contacts_md.webp) 1x);
     @include mq(retina) {
-      background-image: url(../../../images/contacts/bg-contacts_md@2x.png);
-      background-image: -webkit-image-set(url(../../../images/contacts/bg-contacts_md@2x.webp) 2x);
+      background-image: url(../images/contacts/bg-contacts_md@2x.png);
+      background-image: -webkit-image-set(url(../images/contacts/bg-contacts_md@2x.webp) 2x);
     }
   }
   @include mq(desktop) {
     padding: 80px 0;
 
-    background-image: url(../../../images/contacts/bg-contacts_lg.png);
-    background-image: -webkit-image-set(url(../../../images/contacts/bg-contacts_lg.webp) 1x);
+    background-image: url(../images/contacts/bg-contacts_lg.png);
+    background-image: -webkit-image-set(url(../images/contacts/bg-contacts_lg.webp) 1x);
     @include mq(retina) {
-      background-image: url(../../../images/contacts/bg-contacts_lg@2x.png);
-      background-image: -webkit-image-set(url(../../../images/contacts/bg-contacts_lg@2x.webp) 2x);
+      background-image: url(../images/contacts/bg-contacts_lg@2x.png);
+      background-image: -webkit-image-set(url(../images/contacts/bg-contacts_lg@2x.webp) 2x);
     }
   }
 
