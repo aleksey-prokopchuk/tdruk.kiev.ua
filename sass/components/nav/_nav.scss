@@ -1,0 +1,28 @@
+.nav {
+  display: none;
+
+  @include mq(desktop) {
+    display: block;
+  }
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+  &__item {
+  }
+  &__link {
+    padding: 10px 0;
+
+    color: var(--white-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.333;
+    letter-spacing: 1.2px;
+
+    transition: color var(--animation-time) var(--cubic);
+  }
+  &__link:focus,
+  &__link:hover {
+    color: var(--accent-color);
+  }
+}

@@ -1,0 +1,23 @@
+.logo {
+  color: var(--white-color);
+
+  font-family: var(--title-font);
+
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.366;
+  @include mq(mobile) {
+    font-size: 25px;
+    line-height: 1.36;
+  }
+  &__span {
+    color: var(--accent-color);
+  }
+
+  transition: text-shadow var(--animation-time) var(--cubic);
+}
+
+.logo:hover,
+.logo:focus {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.55);
+}

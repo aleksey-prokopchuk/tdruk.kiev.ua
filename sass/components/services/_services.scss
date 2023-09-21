@@ -1,0 +1,154 @@
+.services {
+  padding: 40px 0;
+
+  box-shadow: var(--shadow);
+
+  background-repeat: no-repeat;
+  background-position: top;
+  background-image: url(../../../images/services/bg-services.png);
+  background-image: -webkit-image-set(url(../../../images/services/bg-services.webp) 1x);
+  @include mq(retina) {
+    background-image: url(../../../images/services/bg-services@2x.png);
+    background-image: -webkit-image-set(url(../../../images/services/bg-services@2x.webp) 2x);
+  }
+  @include mq(mobile) {
+    padding-bottom: 58px;
+    background-image: url(../../../images/services/bg-services_sm.png);
+    background-image: -webkit-image-set(url(../../../images/services/bg-services_sm.webp) 1x);
+    @include mq(retina) {
+      background-image: url(../../../images/services/bg-services_sm@2x.png);
+      background-image: -webkit-image-set(url(../../../images/services/bg-services_sm@2x.webp) 2x);
+    }
+  }
+  @include mq(tablet) {
+    padding: 60px 0;
+
+    background-image: url(../../../images/services/bg-services_md.png);
+    background-image: -webkit-image-set(url(../../../images/services/bg-services_md.webp) 1x);
+    @include mq(retina) {
+      background-image: url(../../../images/services/bg-services_md@2x.png);
+      background-image: -webkit-image-set(url(../../../images/services/bg-services_md@2x.webp) 2x);
+    }
+  }
+  @include mq(desktop) {
+    padding: 80px 0;
+    background-image: url(../../../images/services/bg-services_lg.png);
+    background-image: -webkit-image-set(url(../../../images/services/bg-services_lg.webp) 1x);
+    @include mq(retina) {
+      background-image: url(../../../images/services/bg-services_lg@2x.png);
+      background-image: -webkit-image-set(url(../../../images/services/bg-services_lg@2x.webp) 2x);
+    }
+  }
+  &__title {
+    text-align-last: left;
+  }
+
+  &__list {
+    @include mq(desktop) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      // grid-template-rows: 0fr 0.1fr 0.1fr;
+      gap: 81px 90px;
+      grid-template-areas:
+        'services__item--repl services__item--book'
+        'services__item--des services__item--post'
+        'services__item--del services__item--del';
+    }
+  }
+  &__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // grid-template-rows: min-content min-content;
+    grid-auto-columns: 1fr;
+    gap: 20px 15px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      'services__icon title'
+      'services__icon services__description';
+    // width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq(mobile) {
+    }
+    @include mq(tablet) {
+    }
+    @include mq(desktop) {
+      width: 475px;
+      gap: 30px 20px;
+    }
+
+    &--repl {
+      grid-area: services__item--repl;
+    }
+    &--book {
+      grid-area: services__item--book;
+    }
+    &--des {
+      grid-area: services__item--des;
+    }
+    &--post {
+      grid-area: services__item--post;
+    }
+    &--del {
+      grid-area: services__item--del;
+    }
+  }
+
+  &__item .title {
+    text-align: left;
+    margin-bottom: 0;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 25px;
+    @include mq(tablet) {
+      margin-bottom: 45px;
+    }
+    @include mq(desktop) {
+      margin-bottom: 0;
+    }
+  }
+  &__icon {
+    // margin-right: 15px;
+    margin-left: auto;
+    width: 77px;
+    height: 90px;
+
+    fill: var(--accent-color);
+
+    grid-area: services__icon;
+
+    @include mq(mobile) {
+      //   margin-right: 20px;
+      width: 103px;
+      height: 120px;
+    }
+    @include mq(tablet) {
+    }
+    @include mq(desktop) {
+      //   margin-right: 30px;
+      width: 137px;
+      height: 160px;
+    }
+  }
+  &__description {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.333;
+    letter-spacing: 0.6px;
+    // width: 198px;
+    @include mq(mobile) {
+      width: 327px;
+    }
+    @include mq(tablet) {
+      font-size: 14px;
+      line-height: 1.357;
+      letter-spacing: 0.7px;
+      width: 614px;
+    }
+    @include mq(desktop) {
+      width: 308px;
+    }
+    grid-area: services__description;
+  }
+}

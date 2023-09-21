@@ -1,0 +1,112 @@
+.table {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  background-color: var(--white-color);
+
+  @include mq(mobile) {
+    margin-bottom: 30px;
+  }
+  @include mq(tablet) {
+    margin-bottom: 0;
+  }
+  &__title {
+    margin-bottom: 10px;
+    text-align-last: left;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.166;
+    letter-spacing: 0.24px;
+    @include mq(mobile) {
+      font-size: 12px;
+      line-height: 1.166;
+      letter-spacing: 0.24px;
+    }
+    @include mq(tablet) {
+      margin-bottom: 15px;
+    }
+    @include mq(desktop) {
+      font-size: 14px;
+      line-height: 1.142;
+      letter-spacing: 0.24px;
+    }
+  }
+  &__head {
+    background-color: var(--bg-head-color);
+    &--data {
+      padding: 5px 1px;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.166;
+      letter-spacing: 0.2px;
+      @include mq(mobile) {
+        padding: 10px;
+      }
+      @include mq(tablet) {
+      }
+      @include mq(desktop) {
+        font-size: 14px;
+        line-height: 1.142;
+        letter-spacing: 0.24px;
+      }
+    }
+  }
+  &__rows {
+  }
+  &__body {
+    &--data {
+      padding: 5px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.142;
+      letter-spacing: 0.24px;
+      @include mq(tablet) {
+        font-size: 16px;
+        line-height: 1.142;
+        letter-spacing: 0.24px;
+      }
+      @include mq(desktop) {
+        font-size: 18px;
+        line-height: 1.166;
+        letter-spacing: 0.24px;
+      }
+
+      transition: background-color var(--animation-time) var(--cubic);
+    }
+    &--data:hover {
+      background-color: var(--bg-data-color);
+
+      // cursor: pointer;
+    }
+  }
+  &__body &__rows:nth-child(2n) {
+    background-color: var(--bg-rows-color);
+  }
+
+  &__repl {
+    width: 290px;
+
+    @include mq(mobile) {
+      width: 450px;
+    }
+    @include mq(tablet) {
+      width: 350px;
+    }
+    @include mq(desktop) {
+      // margin-bottom: 0;
+      width: 510px;
+    }
+    &--no-paper {
+      grid-area: table__repl--no-paper;
+    }
+    &--with-paper-1_0 {
+      grid-area: table__repl--with-paper-1_0;
+    }
+    &--with-paper-1_1 {
+      grid-area: table__repl--with-paper-1_1;
+    }
+  }
+}

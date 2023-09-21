@@ -1,0 +1,126 @@
+@import '../base/reset';
+
+body {
+  color: var(--main-txt-color);
+  // background-color: var(--main-bg-color);
+
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+}
+
+.title {
+  margin-bottom: 20px;
+  // margin-top: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: 1px;
+
+  @include mq(mobile) {
+    font-size: 22px;
+    line-height: 1.375;
+    letter-spacing: 1.1px;
+  }
+  @include mq(tablet) {
+    font-size: 24px;
+    letter-spacing: 1.2px;
+  }
+  @include mq(desktop) {
+    margin-bottom: 30px;
+
+    font-size: 26px;
+    line-height: 1.346;
+    letter-spacing: 1.3px;
+  }
+
+  grid-area: title;
+}
+
+.upper-title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1.16;
+  letter-spacing: 1.25px;
+
+  @include mq(mobile) {
+    font-size: 30px;
+    line-height: 1.167;
+    letter-spacing: 1.5px;
+  }
+  @include mq(tablet) {
+    font-size: 35px;
+    line-height: 1.171;
+    letter-spacing: 1.75px;
+  }
+  @include mq(desktop) {
+    margin-bottom: 40px;
+    font-size: 40px;
+    line-height: 1.175;
+    letter-spacing: 2px;
+  }
+}
+
+.subtitle {
+  // margin-bottom: 10px;
+
+  // font-weight: 700;
+  // font-size: 24px;
+  // line-height: 28px;
+
+  // color: var(--title-txt-color);
+}
+
+.text-content {
+  // font-weight: 400;
+  // font-size: 14px;
+  // line-height: 1.143;
+
+  // color: var(--main-txt-color);
+}
+
+.form-label {
+  // margin-bottom: 6px;
+
+  // line-height: 1.143;
+}
+
+.form-input,
+.textarea {
+  // margin-bottom: 10px;
+  // padding: 6px 8px;
+
+  // line-height: 1.143;
+
+  // border: 1px solid var(--grey-color);
+  // border-radius: 2px;
+}
+
+// .form-input::placeholder,
+// .textarea::placeholder {
+//   font-weight: 300;
+//   font-size: 12px;
+//   line-height: 1.143;
+
+//   color: var(--dark-grey);
+// }
+
+//   color: var(--title-color);
+//   font-weight: 700;
+//   font-size: 28px;
+//   line-height: 1.17;
+//   letter-spacing: 0.03em;
+//   font-style: var(--secondary-font);
+
+//   @media screen and (min-width: 1200px) {
+//     margin-bottom: 50px;
+
+//     font-size: 36px;
+//     line-height: 1.16;
+//   }
+// }

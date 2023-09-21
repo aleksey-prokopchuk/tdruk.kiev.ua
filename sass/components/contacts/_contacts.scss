@@ -1,0 +1,172 @@
+.contacts {
+  padding: 40px 0;
+
+  box-shadow: var(--shadow);
+
+  background-repeat: no-repeat;
+  background-position: top;
+
+  background-image: url(../../../images/contacts/bg-contacts.png);
+  background-image: -webkit-image-set(url(../../../images/contacts/bg-contacts.webp) 1x);
+  @include mq(retina) {
+    background-image: url(../../../images/contacts/bg-contacts@2x.png);
+    background-image: -webkit-image-set(url(../../../images/contacts/bg-contacts@2x.webp) 2x);
+  }
+  @include mq(mobile) {
+    background-image: url(../../../images/contacts/bg-contacts_sm.png);
+    background-image: -webkit-image-set(url(../../../images/contacts/bg-contacts_sm.webp) 1x);
+    @include mq(retina) {
+      background-image: url(../../../images/contacts/bg-contacts_sm@2x.png);
+      background-image: -webkit-image-set(url(../../../images/contacts/bg-contacts_sm@2x.webp) 2x);
+    }
+  }
+  @include mq(tablet) {
+    padding: 60px 0;
+
+    background-image: url(../../../images/contacts/bg-contacts_md.png);
+    background-image: -webkit-image-set(url(../../../images/contacts/bg-contacts_md.webp) 1x);
+    @include mq(retina) {
+      background-image: url(../../../images/contacts/bg-contacts_md@2x.png);
+      background-image: -webkit-image-set(url(../../../images/contacts/bg-contacts_md@2x.webp) 2x);
+    }
+  }
+  @include mq(desktop) {
+    padding: 80px 0;
+
+    background-image: url(../../../images/contacts/bg-contacts_lg.png);
+    background-image: -webkit-image-set(url(../../../images/contacts/bg-contacts_lg.webp) 1x);
+    @include mq(retina) {
+      background-image: url(../../../images/contacts/bg-contacts_lg@2x.png);
+      background-image: -webkit-image-set(url(../../../images/contacts/bg-contacts_lg@2x.webp) 2x);
+    }
+  }
+
+  &__content {
+    @include mq(desktop) {
+      display: flex;
+
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__list-content {
+    @include mq(tablet-only) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 24px 15px;
+      grid-template-areas:
+        'contacts__item-location contacts__item-fone'
+        'contacts__item-email contacts__item-email';
+    }
+
+    @include mq(desktop) {
+      gap: 24px 178px;
+    }
+  }
+
+  &__item {
+    text-align: center;
+    // margin-left: auto;
+    // margin-right: auto;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.333;
+    letter-spacing: 0.6px;
+    @include mq(tablet) {
+      font-size: 14px;
+      line-height: 1.357;
+      letter-spacing: 0.7px;
+    }
+    @include mq(desktop) {
+      font-size: 16px;
+      line-height: 1.375;
+      letter-spacing: 0.8px;
+    }
+  }
+
+  &__item-fone {
+    grid-area: contacts__item-fone;
+  }
+  &__item-email {
+    grid-area: contacts__item-email;
+  }
+  &__item-location {
+    grid-area: contacts__item-location;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 25px;
+
+    @include mq(tablet) {
+      margin-bottom: 0px;
+    }
+    @include mq(desktop) {
+      margin-bottom: 35px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq(desktop) {
+      justify-content: left;
+    }
+  }
+  &__icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    fill: var(--accent-color);
+    @include mq(mobile) {
+      margin-right: 20px;
+    }
+  }
+
+  &__link {
+    color: var(--main-txt-color);
+
+    transition: color var(--animation-time) var(--cubic);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: var(--accent-color);
+  }
+
+  &__map {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 290px;
+    height: 300px;
+
+    border: 1px solid var(--main-txt-color);
+
+    @include mq(mobile) {
+      width: 450px;
+    }
+    @include mq(tablet-only) {
+      width: 739px;
+      margin-top: 40px;
+    }
+    @include mq(desktop) {
+      margin-top: 0;
+      width: 731px;
+      height: 325px;
+    }
+  }
+}
+.contacts__list .contacts__item-inner {
+  margin: 0;
+}
+
+.contacts .title {
+  margin-bottom: 15px;
+}

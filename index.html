@@ -4,7 +4,413 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href=" https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css "
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;800&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Тиражування та друк на ризографі</title>
   </head>
-  <body></body>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="header__container container">
+        <a class="link-no-decor logo" href=""><span class="logo__span">tdruk</span>.kiev.ua</a>
+        <nav class="nav">
+          <ul class="nav__list list-no-marker">
+            <li class="nav__item">
+              <a class="nav__link link-no-decor" href="#services">Наші послуги</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link-no-decor" href="#price">Наші ціни</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link-no-decor" href="#order">Порядок замовлення та оплата</a>
+            </li>
+            <!-- <li class="nav__item"><a class="nav__link link-no-decor" href="">Про нас</a></li> -->
+            <li class="nav__item">
+              <a class="nav__link link-no-decor" href="#contacts">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__list list-no-marker">
+          <li class="header__item">
+            <a class="header__link link-no-decor" href="tel:+380503340129">(050) 334-01-29</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link link-no-decor" href="tel:+380683667674">(068) 366-76-74</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <!-- hero -->
+      <div class="hero">
+        <div class="container">
+          <h1 class="hero__title">Тиражування та друк на ризографі</h1>
+          <ul class="hero__list list-no-marker">
+            <li class="hero__item">реклами</li>
+            <li class="hero__item">листівки</li>
+            <li class="hero__item">бланки</li>
+            <li class="hero__item">інструкції</li>
+            <li class="hero__item">брошури</li>
+            <li class="hero__item">журнали</li>
+            <li class="hero__item">книги</li>
+            <li class="hero__item">тощо</li>
+          </ul>
+        </div>
+      </div>
+      <!-- services -->
+      <div class="services" id="services">
+        <div class="container">
+          <p class="upper-title">Наші послуги</p>
+          <ul class="services__list list-no-marker">
+            <li class="services__item services__item--repl">
+              <svg class="services__icon">
+                <use href="./images/svg/sprite.svg#icon-replication"></use>
+              </svg>
+              <h2 class="services__title title">Тиражування на ризографі</h2>
+              <p class="services__description">
+                Швидко та якісно виготовимо будь-який тираж на різографі
+              </p>
+            </li>
+            <li class="services__item services__item--book">
+              <svg class="services__icon">
+                <use href="./images/svg/sprite.svg#icon-books"></use>
+              </svg>
+              <h2 class="services__title title">Виготовлення журнально-книжної продукції</h2>
+              <p class="services__description">
+                Маємо обладнання для виготовлення журнально-книжної продукції скріплюючи на скобу
+                або на термоклеєвій машині
+              </p>
+            </li>
+            <li class="services__item services__item--des">
+              <svg class="services__icon">
+                <use href="./images/svg/sprite.svg#icon-design"></use>
+              </svg>
+              <h2 class="services__title title">Верстка</h2>
+              <p class="services__description">Верстка та макетування</p>
+            </li>
+            <li class="services__item services__item--post">
+              <svg class="services__icon">
+                <use href="./images/svg/sprite.svg#icon-post_press"></use>
+              </svg>
+              <h2 class="services__title title">Пост-прес</h2>
+              <p class="services__description">
+                Підбираємо аркуші, прошиваємо дротошвейною машиною, клеїмо блоки, ріжемо тираж,
+                пакуємо в термопакувальній машині
+              </p>
+            </li>
+            <li class="services__item services__item--del">
+              <svg class="services__icon">
+                <use href="./images/svg/sprite.svg#icon-delivery"></use>
+              </svg>
+              <h2 class="services__title title">Доставка продукцї</h2>
+              <p class="services__description">
+                Доставимо готову продукцію за вашою адресою (доставка згідно з тарифами нової пошти)
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- price -->
+      <div class="price" id="price">
+        <div class="container">
+          <p class="upper-title">Наші ціни</p>
+          <h2 class="title">Тиражування на ризографі</h2>
+          <div class="price__wrapper">
+            <table class="table table__repl table__repl--no-paper">
+              <caption class="table__title">
+                Односторонній друк без вартості паперу
+              </caption>
+              <thead class="table__head">
+                <tr class="table__rows">
+                  <th class="table__head--data">Тираж</th>
+                  <th class="table__head--data">Вартість, грн</th>
+                  <th class="table__head--data">
+                    Вартість <br />
+                    екземпляру, грн
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="table__body">
+                <tr class="table__rows">
+                  <td class="table__body--data">250</td>
+                  <td class="table__body--data">300</td>
+                  <td class="table__body--data">1,2</td>
+                </tr>
+                <tr class="table__rows">
+                  <td class="table__body--data">500</td>
+                  <td class="table__body--data">550</td>
+                  <td class="table__body--data">1,1</td>
+                </tr>
+                <tr class="table__rows">
+                  <td class="table__body--data">1000</td>
+                  <td class="table__body--data">1000</td>
+                  <td class="table__body--data">0,9</td>
+                </tr>
+                <tr class="table__rows">
+                  <td class="table__body--data">2500</td>
+                  <td class="table__body--data">2250</td>
+                  <td class="table__body--data">0,7</td>
+                </tr>
+                <tr class="table__rows">
+                  <td class="table__body--data">5000</td>
+                  <td class="table__body--data">4000</td>
+                  <td class="table__body--data">0,6</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table table__repl table__repl--with-paper-1_0">
+              <caption class="table__title">
+                Односторонній друк на білому папері 80г/м2
+              </caption>
+              <thead class="table__head">
+                <tr class="table__rows">
+                  <th class="table__head--data">Тираж</th>
+                  <th class="table__head--data">Вартість, грн</th>
+                  <th class="table__head--data">
+                    Вартість <br />
+                    екземпляру, грн
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="table__body">
+                <tr class="table__rows">
+                  <td class="table__body--data">250</td>
+                  <td class="table__body--data">500</td>
+                  <td class="table__body--data">2,0</td>
+                </tr>
+                <tr class="table__rows">
+                  <td class="table__body--data">500</td>
+                  <td class="table__body--data">950</td>
+                  <td class="table__body--data">1,9</td>
+                </tr>
+                <tr class="table__rows">
+                  <td class="table__body--data">1000</td>
+                  <td class="table__body--data">1700</td>
+                  <td class="table__body--data">1,8</td>
+                </tr>
+                <tr class="table__rows">
+                  <td class="table__body--data">2500</td>
+                  <td class="table__body--data">3750</td>
+                  <td class="table__body--data">1,7</td>
+                </tr>
+                <tr class="table__rows">
+                  <td class="table__body--data">5000</td>
+                  <td class="table__body--data">7000</td>
+                  <td class="table__body--data">1,6</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table table__repl table__repl--with-paper-1_1">
+              <caption class="table__title">
+                Двосторонній друк на білому папері 80г/м2
+              </caption>
+              <thead class="table__head">
+                <tr class="table__rows">
+                  <th class="table__head--data">Тираж</th>
+                  <th class="table__head--data">Вартість, грн</th>
+                  <th class="table__head--data">
+                    Вартість <br />
+                    екземпляру, грн
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="table__body">
+                <tr class="table__rows">
+                  <td class="table__body--data">250</td>
+                  <td class="table__body--data">800</td>
+                  <td class="table__body--data">3,2</td>
+                </tr>
+                <tr class="table__rows">
+                  <td class="table__body--data">500</td>
+                  <td class="table__body--data">1500</td>
+                  <td class="table__body--data">3,0</td>
+                </tr>
+                <tr class="table__rows">
+                  <td class="table__body--data">1000</td>
+                  <td class="table__body--data">2600</td>
+                  <td class="table__body--data">2,6</td>
+                </tr>
+                <tr class="table__rows">
+                  <td class="table__body--data">2500</td>
+                  <td class="table__body--data">5500</td>
+                  <td class="table__body--data">2,2</td>
+                </tr>
+                <tr class="table__rows">
+                  <td class="table__body--data">5000</td>
+                  <td class="table__body--data">10000</td>
+                  <td class="table__body--data">2,0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h2 class="title">Друк книг малим тиражем</h2>
+          <table class="table">
+            <thead class="table__head">
+              <tr class="table__rows">
+                <th class="table__head--data">Розмір видання, мм</th>
+                <th class="table__head--data">Кілкість сторінок</th>
+                <th class="table__head--data">Тираж</th>
+                <th class="table__head--data">Вартість примірника, грн</th>
+                <th class="table__head--data">Вартість за тираж, грн</th>
+              </tr>
+            </thead>
+            <tbody class="table__body">
+              <tr class="table__rows">
+                <td rowspan="2" class="table__body--data">144 x 199</td>
+                <td rowspan="4" class="table__body--data">100</td>
+                <td class="table__body--data">50</td>
+                <td class="table__body--data">110</td>
+                <td class="table__body--data">5500</td>
+              </tr>
+              <tr class="table__rows">
+                <td class="table__body--data">100</td>
+                <td class="table__body--data">80</td>
+                <td class="table__body--data">8000</td>
+              </tr>
+              <tr class="table__rows">
+                <td rowspan="2" class="table__body--data">204 x 289</td>
+                <td class="table__body--data">50</td>
+                <td class="table__body--data">220</td>
+                <td class="table__body--data">11000</td>
+              </tr>
+              <tr class="table__rows">
+                <td class="table__body--data">100</td>
+                <td class="table__body--data">180</td>
+                <td class="table__body--data">1800</td>
+              </tr>
+            </tbody>
+          </table>
+          <h2 class="title">Додрукарська підготовка</h2>
+          <table class="table">
+            <thead class="table__head">
+              <tr class="table__rows">
+                <th class="table__head--data">Проста верстка</th>
+                <th class="table__head--data">
+                  Середня верстка (10-15% формул, малюнків, графіків)
+                </th>
+                <th class="table__head--data">
+                  Складна верстка (до 50% формул, малюнків, графіків)
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table__rows">
+                <td class="table__body--data">від 20 грн/стор.</td>
+                <td class="table__body--data">30 грн/стор.</td>
+                <td class="table__body--data">від 40 грн/стор.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- order -->
+      <div class="order" id="order">
+        <div class="container">
+          <p class="upper-title">Порядок замовлення та оплата</p>
+          <p class="order__content">
+            Замовлення приймаємо по телефону або електронній пошті. <br />
+            <br />Тут будуть вимоги до макетів (посилання)<br /><br />Після отримання замовлення вам
+            буде виставлено рахунок який ви можете сплатити за реквізитами або перерахувати на
+            банківську карту.<br />Після виконання замовлення ми можемо здійснити доставку на
+            вказану вами адресу (вартість за тарифами Нової Пошти).
+          </p>
+        </div>
+      </div>
+      <!-- about -->
+      <!-- <div class="about" id="about"></div> -->
+      <!-- contacts -->
+      <div class="contacts" id="contacts">
+        <div class="container">
+          <p class="upper-title">Контакти</p>
+          <div class="contacts__content">
+            <ul class="contacts__list contacts__list-content list-no-marker">
+              <li class="contacts__item contacts__item-location">
+                <h2 class="title">Наша адреса</h2>
+                <div class="contacts__wrapper">
+                  <svg class="contacts__icon">
+                    <use href="./images/svg/sprite.svg#icon-location"></use>
+                  </svg>
+                  Вулиця Іоанна Павла II, 4/6, корпус А, Київ.
+                </div>
+              </li>
+              <li class="contacts__item contacts__item-fone">
+                <h2 class="title">Телефони для звязку</h2>
+                <div class="contacts__wrapper">
+                  <svg class="contacts__icon">
+                    <use href="./images/svg/sprite.svg#icon-fone"></use>
+                  </svg>
+                  <ul class="contacts__list list-no-marker">
+                    <li class="contacts__item contacts__item-inner">
+                      <a class="contacts__link link-no-decor" href="tel:+380503340129"
+                        >(050) 334-01-29
+                      </a>
+                    </li>
+                    <li class="contacts__item contacts__item-inner">
+                      <a class="contacts__link link-no-decor" href="tel:+380683667674"
+                        >(068) 366-76-74</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="contacts__item contacts__item-email">
+                <h2 class="title">Електронна адреса</h2>
+                <div class="contacts__wrapper">
+                  <svg class="contacts__icon">
+                    <use href="./images/svg/sprite.svg#icon-email"></use>
+                  </svg>
+                  <a class="contacts__link link-no-decor" href="mailto:prokop4huk@ukr.net"
+                    >prokop4huk@ukr.net</a
+                  >
+                </div>
+              </li>
+            </ul>
+            <div class="contacts__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d635.5256252919972!2d30.52866126966275!3d50.42056185270566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1695213812533!5m2!1suk!2sua"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <a class="footer__logo logo link-no-decor" href=""
+          ><span class="logo__span">tdruk</span>.kiev.ua</a
+        >
+        <ul class="footer__list list-no-marker">
+          <li class="footer__item">
+            <a class="footer__link link-no-decor" href="tel:+380503340129">(050) 334-01-29</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link link-no-decor" href="tel:+380683667674">(068) 366-76-74</a>
+          </li>
+        </ul>
+        <p class="footer__copyright">&#169; 2023</p>
+      </div>
+    </footer>
+    <script type="module" src="./js/scroll.js"></script>
+  </body>
 </html>

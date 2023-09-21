@@ -1,0 +1,16 @@
+@import './variables/variables';
+
+@import './utils/mixins';
+@import './base/base';
+
+@import './components/container';
+@import './components/header/header';
+@import './components/logo/logo';
+@import './components/nav/nav';
+@import './components/hero/hero';
+@import './components/services/services';
+@import './components/price/price';
+@import './components/table/table';
+@import './components/order/order';
+@import './components/contacts/contacts';
+@import './components/footer/footer';
