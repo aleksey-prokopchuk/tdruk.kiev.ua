@@ -1,0 +1,26 @@
+.mobile-nav {
+  &__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  &__link {
+    color: var(--white-color);
+
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 1.347;
+    letter-spacing: 0.4px;
+
+    // @include mq(mobile) {
+    //   font-size: 30px;
+    //   line-height: 1.366;
+    //   letter-spacing: 0.6px;
+    // }
+
+    transition: color var(--animation-time) var(--cubic);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: var(--accent-color);
+  }
+}

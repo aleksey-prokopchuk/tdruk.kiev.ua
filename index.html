@@ -32,7 +32,6 @@
     <title>Тиражування та друк на ризографі</title>
   </head>
   <body>
-    <!-- header -->
     <header class="header">
       <div class="header__container container">
         <a class="link-no-decor logo" href=""><span class="logo__span">tdruk</span>.kiev.ua</a>
@@ -47,7 +46,7 @@
             <li class="nav__item">
               <a class="nav__link link-no-decor" href="#order">Порядок замовлення та оплата</a>
             </li>
-            <!-- <li class="nav__item"><a class="nav__link link-no-decor" href="">Про нас</a></li> -->
+            <li class="nav__item"><a class="nav__link link-no-decor" href="#about">Про нас</a></li>
             <li class="nav__item">
               <a class="nav__link link-no-decor" href="#contacts">Контакти</a>
             </li>
@@ -61,10 +60,21 @@
             <a class="header__link link-no-decor" href="tel:+380683667674">(068) 366-76-74</a>
           </li>
         </ul>
+        <button
+          class="mobile-btn"
+          type="button"
+          aria-label="Кнопка мобільного меню"
+          aria-expanded="folse"
+          data-menu-button
+        >
+          <svg class="mobile-btn__icon">
+            <use class="mobile-btn__open" href="./images/svg/sprite.svg#icon-menu_open"></use>
+            <use class="mobile-btn__close" href="./images/svg/sprite.svg#icon-menu_close"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
-      <!-- hero -->
       <div class="hero">
         <div class="container">
           <h1 class="hero__title">Тиражування та друк на ризографі</h1>
@@ -80,7 +90,6 @@
           </ul>
         </div>
       </div>
-      <!-- services -->
       <div class="services" id="services">
         <div class="container">
           <p class="upper-title">Наші послуги</p>
@@ -127,13 +136,13 @@
               </svg>
               <h2 class="services__title title">Доставка продукцї</h2>
               <p class="services__description">
-                Доставимо готову продукцію за вашою адресою (доставка згідно з тарифами нової пошти)
+                Доставка здійснюється компанією "Нова пошта", готову продукцію надішлемо на вашу
+                адресою (згідно з тарифами компанії)
               </p>
             </li>
           </ul>
         </div>
       </div>
-      <!-- price -->
       <div class="price" id="price">
         <div class="container">
           <p class="upper-title">Наші ціни</p>
@@ -328,22 +337,40 @@
           </table>
         </div>
       </div>
-      <!-- order -->
       <div class="order" id="order">
         <div class="container">
           <p class="upper-title">Порядок замовлення та оплата</p>
+          <h2 class="title">Порядок замовлення</h2>
           <p class="order__content">
-            Замовлення приймаємо по телефону або електронній пошті. <br />
-            <br />Тут будуть вимоги до макетів (посилання)<br /><br />Після отримання замовлення вам
-            буде виставлено рахунок який ви можете сплатити за реквізитами або перерахувати на
-            банківську карту.<br />Після виконання замовлення ми можемо здійснити доставку на
+            Замовлення приймаємо за телефонами, файли для друку надсилати на електронну пошту
+            (заздалегідь повідомивши про це) або привезти на носії до друкарні. <br /><br />Після
+            отримання замовлення вам буде виставлено рахунок. <br /><br />Гтовий тираж надішлемо на
             вказану вами адресу (вартість за тарифами Нової Пошти).
+          </p>
+          <h2 class="title">Порядок оплати</h2>
+          <p class="order__content">
+            Працюємо за умови попередньої уплати. <br /><br />
+            Оплатити замовлення можна кількома шляхами:
+          </p>
+          <ul>
+            <li>безготівковий платіж;</li>
+            <li>банківський переказ в будь-якому банку;</li>
+            <li>перерахувати кошти на карту;</li>
+            <li>оплата готівкою.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="about" id="about">
+        <div class="container">
+          <h2 class="title">Про нас</h2>
+          <p class="about__content">
+            Науково виробниче підприємство «ФОРУМ» має досвід друку періодичних видань з 199? року.
+            <br />
+            Маємо лінійку (власне) обладнання для друку … (перелік що друкуємо). <br />
+            Державна реєстрація видавця
           </p>
         </div>
       </div>
-      <!-- about -->
-      <!-- <div class="about" id="about"></div> -->
-      <!-- contacts -->
       <div class="contacts" id="contacts">
         <div class="container">
           <p class="upper-title">Контакти</p>
@@ -420,6 +447,76 @@
         <p class="footer__copyright">&#169; 2023</p>
       </div>
     </footer>
+    <div class="mobile-menu" data-menu>
+      <div class="mobile-menu__container container">
+        <nav class="mobile-nav">
+          <ul class="mobile-nav__list list-no-marker">
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link link-no-decor" menu-services href="#services"
+                >Наші послуги</a
+              >
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link link-no-decor" id="price" menu-price href="#price"
+                >Наші ціни</a
+              >
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link link-no-decor" id="order" menu-order href="#order"
+                >Порядок замовлення та оплата</a
+              >
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link link-no-decor" id="about" menu-about href="#about"
+                >Про нас</a
+              >
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link link-no-decor" id="contacts" menu-contacts href="#contacts"
+                >Контакти</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <ul class="mobile-menu__list list-no-marker">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link-no-decor" mobile-menu href="tel:+380503340129">
+              <svg class="mobile-menu__icon">
+                <use href="./images/svg/sprite.svg#icon-fone"></use>
+              </svg>
+              <p>(050) 334-01-29</p>
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link-no-decor" mobile-menu href="tel:+380683667674">
+              <svg class="mobile-menu__icon">
+                <use href="./images/svg/sprite.svg#icon-fone"></use>
+              </svg>
+              (068) 366-76-74</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a
+              class="mobile-menu__link mobile-menu__link--mail link-no-decor"
+              mobile-menu
+              href="mailto:prokop4huk@ukr.net"
+            >
+              <svg class="mobile-menu__icon">
+                <use href="./images/svg/sprite.svg#icon-email"></use>
+              </svg>
+              prokop4huk@ukr.net</a
+            >
+          </li>
+        </ul>
+
+        <!-- <div class="container">
+        <div class="modal">
+          <button class="modal" type="button"></button>
+        </div>
+      </div> -->
+      </div>
+    </div>
     <script type="module" src="./js/scroll.js"></script>
+    <script type="module" src="./js/mobile-menu.js"></script>
   </body>
 </html>
