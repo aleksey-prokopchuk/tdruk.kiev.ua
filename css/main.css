@@ -148,6 +148,11 @@ body {
 .header {
   padding: 25px 0;
   background: var(--bg-color);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -229,10 +234,10 @@ body {
 }
 
 .hero {
-  padding: 40px 0 63px 0;
+  padding: 140px 0 63px 0;
   box-shadow: var(--shadow);
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: bottom;
   background-image: url(../images/hero/bg-hero.png);
   background-image: -webkit-image-set(url(../images/hero/bg-hero.webp) 1x);
 }
@@ -257,7 +262,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    padding: 60px 0 84px 0;
+    padding: 176px 0 84px 0;
     background-image: url(../images/hero/bg-hero_md.png);
     background-image: -webkit-image-set(url(../images/hero/bg-hero_md.webp) 1x);
   }
@@ -270,7 +275,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    padding: 60px 0 100px 0;
+    padding: 163px 0 100px 0;
     background-image: url(../images/hero/bg-hero_lg.png);
     background-image: -webkit-image-set(url(../images/hero/bg-hero_lg.webp) 1x);
   }
@@ -1140,7 +1145,13 @@ body {
   width: 100vw;
   height: 100vh;
   padding: 30px;
+  padding-top: 100px;
   background-color: var(--bg-color);
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu__container {
+    padding-top: 116px;
+  }
 }
 .mobile-menu__list::before {
   content: "";

@@ -20,7 +20,12 @@
     width: 100vw;
     height: 100vh;
     padding: 30px;
+    padding-top: 100px;
     background-color: var(--bg-color);
+
+    @include mq(tablet) {
+      padding-top: 116px;
+    }
   }
 
   &__list::before {
