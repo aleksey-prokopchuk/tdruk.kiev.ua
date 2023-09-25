@@ -10,48 +10,20 @@
     const menuAbout = document.querySelector('[menu-about]');
     const menuContacts = document.querySelector('[menu-contacts]');
   
-    menuBtnRef.addEventListener('click', () => {
+    const mobileMenu = (() => {
         const expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
         menuBtnRef.classList.toggle('is-active');
         menuBtnRef.setAttribute('aria-expanded', !expanded);
         mobileMenuRef.classList.toggle('is-open');
         body.classList.toggle('no-scroll');
-  });
-    menuServices.addEventListener('click', () => {
-        const expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
-        menuBtnRef.classList.toggle('is-active');
-        menuBtnRef.setAttribute('aria-expanded', !expanded);
-        mobileMenuRef.classList.toggle('is-open');
-        body.classList.toggle('no-scroll');
-    });
-    menuPrise.addEventListener('click', () => {
-        const expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
-        menuBtnRef.classList.toggle('is-active');
-        menuBtnRef.setAttribute('aria-expanded', !expanded);
-        mobileMenuRef.classList.toggle('is-open');
-        body.classList.toggle('no-scroll');
-    });
-    menuOrder.addEventListener('click', () => {
-        const expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
-        menuBtnRef.classList.toggle('is-active');
-        menuBtnRef.setAttribute('aria-expanded', !expanded);
-        mobileMenuRef.classList.toggle('is-open');
-        body.classList.toggle('no-scroll');
-    });
-    menuAbout.addEventListener('click', () => {
-        const expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
-        menuBtnRef.classList.toggle('is-active');
-        menuBtnRef.setAttribute('aria-expanded', !expanded);
-        mobileMenuRef.classList.toggle('is-open');
-        body.classList.toggle('no-scroll');
-    });
-    menuContacts.addEventListener('click', () => {
-        const expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
-        menuBtnRef.classList.toggle('is-active');
-        menuBtnRef.setAttribute('aria-expanded', !expanded);
-        mobileMenuRef.classList.toggle('is-open');
-        body.classList.toggle('no-scroll');
-    });
+    })
+
+    menuBtnRef.addEventListener('click', (mobileMenu));
+    menuServices.addEventListener('click', (mobileMenu));
+    menuPrise.addEventListener('click', (mobileMenu));
+    menuOrder.addEventListener('click', (mobileMenu));
+    menuAbout.addEventListener('click', (mobileMenu));
+    menuContacts.addEventListener('click', (mobileMenu));    
 })();
 
 
