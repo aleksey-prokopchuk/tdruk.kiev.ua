@@ -57,7 +57,7 @@
   }
   &__item {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     // grid-template-rows: min-content min-content;
     grid-auto-columns: 1fr;
     gap: 20px 15px;
