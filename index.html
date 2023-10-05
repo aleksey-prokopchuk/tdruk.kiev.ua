@@ -78,7 +78,7 @@
           type="button"
           aria-label="Кнопка мобільного меню"
           aria-expanded="folse"
-          data-menu-button
+          data-menu-button=""
         >
           <svg class="mobile-btn__icon">
             <use class="mobile-btn__open" href="./images/svg/sprite.svg#icon-menu_open"></use>
@@ -460,40 +460,32 @@
         <p class="footer__copyright">&#169; 2023</p>
       </div>
     </footer>
-    <div class="mobile-menu" data-menu>
+    <div class="mobile-menu" data-menu="">
       <div class="mobile-menu__container container">
         <nav class="mobile-nav">
           <ul class="mobile-nav__list list-no-marker">
-            <li class="mobile-nav__item">
-              <a class="mobile-nav__link link-no-decor" menu-services href="#services"
-                >Наші послуги</a
-              >
+            <li class="mobile-nav__item" data-menu-services="">
+              <a class="mobile-nav__link link-no-decor" href="#services">Наші послуги</a>
             </li>
-            <li class="mobile-nav__item">
-              <a class="mobile-nav__link link-no-decor" id="price" menu-price href="#price"
-                >Наші ціни</a
-              >
+            <li class="mobile-nav__item" data-menu-price="">
+              <a class="mobile-nav__link link-no-decor" href="#price">Наші ціни</a>
             </li>
-            <li class="mobile-nav__item">
-              <a class="mobile-nav__link link-no-decor" id="order" menu-order href="#order"
+            <li class="mobile-nav__item" data-menu-order="">
+              <a class="mobile-nav__link link-no-decor" href="#order"
                 >Порядок замовлення та оплата</a
               >
             </li>
-            <li class="mobile-nav__item">
-              <a class="mobile-nav__link link-no-decor" id="about" menu-about href="#about"
-                >Про нас</a
-              >
+            <li class="mobile-nav__item" data-menu-about="">
+              <a class="mobile-nav__link link-no-decor" href="#about">Про нас</a>
             </li>
-            <li class="mobile-nav__item">
-              <a class="mobile-nav__link link-no-decor" id="contacts" menu-contacts href="#contacts"
-                >Контакти</a
-              >
+            <li class="mobile-nav__item" data-menu-contacts="">
+              <a class="mobile-nav__link link-no-decor" href="#contacts">Контакти</a>
             </li>
           </ul>
         </nav>
         <ul class="mobile-menu__list list-no-marker">
           <li class="mobile-menu__item">
-            <a class="mobile-menu__link link-no-decor" mobile-menu href="tel:+380503340129">
+            <a class="mobile-menu__link link-no-decor" href="tel:+380503340129">
               <svg class="mobile-menu__icon">
                 <use href="./images/svg/sprite.svg#icon-fone"></use>
               </svg>
@@ -501,7 +493,7 @@
             </a>
           </li>
           <li class="mobile-menu__item">
-            <a class="mobile-menu__link link-no-decor" mobile-menu href="tel:+380683667674">
+            <a class="mobile-menu__link link-no-decor" href="tel:+380683667674">
               <svg class="mobile-menu__icon">
                 <use href="./images/svg/sprite.svg#icon-fone"></use>
               </svg>
@@ -511,7 +503,6 @@
           <li class="mobile-menu__item">
             <a
               class="mobile-menu__link mobile-menu__link--mail link-no-decor"
-              mobile-menu
               href="mailto:prokop4huk@ukr.net"
             >
               <svg class="mobile-menu__icon">
@@ -521,12 +512,6 @@
             >
           </li>
         </ul>
-
-        <!-- <div class="container">
-        <div class="modal">
-          <button class="modal" type="button"></button>
-        </div>
-      </div> -->
       </div>
     </div>
     <script type="module" src="./js/scroll.js"></script>

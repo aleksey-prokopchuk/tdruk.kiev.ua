@@ -4,11 +4,11 @@
     const body = document.querySelector('body');
   
     
-    const menuServices = document.querySelector('[menu-services]');
-    const menuPrise = document.querySelector('[menu-price]');
-    const menuOrder = document.querySelector('[menu-order]');
-    const menuAbout = document.querySelector('[menu-about]');
-    const menuContacts = document.querySelector('[menu-contacts]');
+    const menuServices = document.querySelector('[data-menu-services]');
+    const menuPrise = document.querySelector('[data-menu-price]');
+    const menuOrder = document.querySelector('[data-menu-order]');
+    const menuAbout = document.querySelector('[data-menu-about]');
+    const menuContacts = document.querySelector('[data-menu-contacts]');
   
     const mobileMenu = (() => {
         const expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
